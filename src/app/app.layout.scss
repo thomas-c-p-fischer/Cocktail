@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+app-title {
+  color : $mainColor;
+  background-color: $secondaryColor;
+}

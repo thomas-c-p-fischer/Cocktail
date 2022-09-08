@@ -1,0 +1,8 @@
+<div *ngIf="hydra | async as apiResponse">
+  <p>There are {{ apiResponse["hydra:totalItems"] }} cocktails in the database.</p>
+  <div *ngFor="let cocktail of apiResponse['hydra:member']">
+    <app-cocktail [cocktail]="cocktail"></app-cocktail>
+<!--    <img [src]="cocktail.strDrinkThumb">-->
+<!--    c'est la même chose que : <img src="{{cocktail.strDrinkThumb}}">-->
+  </div>
+</div>
